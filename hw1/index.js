@@ -35,6 +35,8 @@ const weeksAmount = 8;
 
 let result = Math.ceil((weeksAmount * consumptionPerWeek) / sheetsInReamPaper);
 
+// переписать код выше через if и %
+
 console.log(result)
 
 console.log('---End Third Part---')
@@ -72,4 +74,3 @@ for(let i = 1; i <= medianNumber; i++) {
     } 
     console.log(linia + reshotka + linia)
 }
-
