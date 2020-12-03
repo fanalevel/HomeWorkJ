@@ -10,9 +10,13 @@ const citiesAndCountries = {
 	'Вена': 'Австрия',
 };
 
+let tetx = []
+
 for (let key in citiesAndCountries) {
-      console.log(key + ' это ' + citiesAndCountries[key]);
+      tetx.push(key + ' это ' + citiesAndCountries[key]);
 }
+
+console.log (tetx);
 
 // _________________
 
