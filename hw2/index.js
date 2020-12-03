@@ -16,7 +16,6 @@ for (let key in citiesAndCountries) {
       tetx.push(key + ' это ' + citiesAndCountries[key]);
 }
 
-
 console.log (tetx);
 
 // _________________
