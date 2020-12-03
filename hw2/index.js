@@ -37,3 +37,25 @@ function getArray(){
 }
 
 console.log (getArray());
+
+// _________________
+
+// Stage 3
+
+const namesOfDays = {
+    ru: ['Понедельник', 'Вторник', 'Среда','Четверг', 'Пятница', 'Суббота', 'Воскресенье', 'Воскресенье'],
+    en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+}
+
+function getNameOfDay(){
+    let lang = 'ru';
+    let day = 5;
+    if(lang == 'en'){
+        console.log(namesOfDays.en[(day-1)])
+    }
+    if(lang == 'ru'){
+        console.log(namesOfDays.ru[day-1])
+    }
+}
+
+getNameOfDay()
