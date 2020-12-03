@@ -82,3 +82,11 @@ function SumMinPlus () {
 
 SumMinPlus ();
 
+
+// _________________
+
+// Stage 5
+
+const number = [1, 0, 1, 1, 0, 1, 0, 1];
+
+console.log(parseInt(number.join(''), 2));
