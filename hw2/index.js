@@ -59,3 +59,26 @@ function getNameOfDay(){
 }
 
 getNameOfDay()
+
+// _________________
+
+// Stage 4
+
+const arr = [12, -898, 899, -900, 300, 400, - 12, 56, 5.7];
+
+function SumMinPlus () {
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] < 0) {
+        arr.splice(i, 1);
+    }
+    if (arr[i] - Math.trunc(arr[i]) !=0) {
+      arr.splice(i, 1);
+    }
+} arr.sort(function(a,b){ 
+    return a - b;
+  })
+  console.log(arr[0] + arr[1]);
+}
+
+SumMinPlus ();
+
