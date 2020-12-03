@@ -51,10 +51,10 @@ function getNameOfDay(){
     let lang = 'ru';
     let day = 5;
     if(lang == 'en'){
-        console.log(namesOfDays.en[(day-1)])
+        console.log(namesOfDays.en[(day - 1)])
     }
     if(lang == 'ru'){
-        console.log(namesOfDays.ru[day-1])
+        console.log(namesOfDays.ru[(day - 1)])
     }
 }
 
