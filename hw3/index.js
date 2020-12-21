@@ -40,3 +40,19 @@ const getFullNamesFromArr = (arr) => {
 getFullNamesFromArr(emplyeeConstructArr)
 
 console.log(getFullNamesFromArr(emplyeeConstructArr))
+
+// Задание 5. Создать функцию которая вернет среднее значение зарплаты всех employee
+
+const getMiddleSalary = (arr) => {
+      let sum = emplyeeConstructArr.map(emplyeeConstructArr => emplyeeConstructArr.salary)
+       let sum1 = 0;       
+      for (let i = 0; i < sum.length; i++) {       
+        sum1 += sum[i];
+      }
+      return sum1 / sum.length;
+}
+
+getMiddleSalary(emplyeeConstructArr) 
+
+console.log(getMiddleSalary(emplyeeConstructArr))
+
