@@ -29,3 +29,14 @@ let createEmployesFromArr = (arr) => {
 const emplyeeConstructArr = createEmployesFromArr(emplyeeArr) 
 
 console.log(emplyeeConstructArr)
+
+// Задание 4. Создать функцию которая вернет массив со всеми полными именами каждого employee, содержащегося в emplyeeConstructArr;
+
+const getFullNamesFromArr = (arr) => {
+  arr = emplyeeConstructArr.map(Emploee.getFullName())
+      return arr;
+}
+
+getFullNamesFromArr(emplyeeConstructArr)
+
+console.log(getFullNamesFromArr(emplyeeConstructArr))
