@@ -49,10 +49,21 @@ const getMiddleSalary = (arr) => {
       for (let i = 0; i < sum.length; i++) {       
         sum1 += sum[i];
       }
-      return sum1 / sum.length;
+      return arr = (sum1 / sum.length);
 }
 
 getMiddleSalary(emplyeeConstructArr) 
 
 console.log(getMiddleSalary(emplyeeConstructArr))
 
+// Задание 6*. Создать функцию которая выберет наугад работника из массива emplyeeConstructArr. Вы должны учитывать в функции длинну массива, так как если работников 7, а рандомное число будет равно больше 7, то результат будет undefined. Вы можете использовать обьявленную функцию в сомой же себе.
+
+const getRandomEmployee = (arr) => {
+  let RandomEmployee = (~~(Math.random() * emplyeeConstructArr.length))
+  return arr[RandomEmployee]; 
+
+}
+
+getRandomEmployee(emplyeeConstructArr)
+
+console.log(getRandomEmployee(emplyeeConstructArr))
