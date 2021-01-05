@@ -172,3 +172,31 @@ console.log(myString.ucFirst('qwerty'))
 myString.ucWords('qwerty qwerty qwerty'); //выведет 'Qwerty Qwerty Qwerty
 
 console.log(myString.ucWords('qwerty qwerty qwerty'));
+
+
+// // Задание 3. Реализуйте класс Validator, который будет проверять строки. К примеру, у него будет метод checkIsEmail() параметром принимает строку и проверяет, является ли она емейлом или нет. Если является - возвращает true, если не является - то false. Кроме того, класс будет иметь следующие методы: метод checkIsDomain для проверки домена, метод checkIsDate для проверки даты и метод checkIsPhone для проверки телефона:
+
+
+
+class Validator {
+  constructor(){
+    this.checkIsEmail();
+  }
+
+  checkIsEmail(inputText){
+    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(inputText.value.match(mailformat))
+        {
+        alert("Valid email address!");
+        document.form.email.focus();
+        return true;
+        }
+        else
+        {
+        alert("You have entered an invalid email address!");
+        document.form.email.focus();
+        return false;
+  }
+  }
+  }
+
