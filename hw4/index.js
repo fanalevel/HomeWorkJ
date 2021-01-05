@@ -181,22 +181,40 @@ console.log(myString.ucWords('qwerty qwerty qwerty'));
 class Validator {
   constructor(){
     this.checkIsEmail();
+    this.checkIsDomain();
   }
 
   checkIsEmail(inputText){
-    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if(inputText.value.match(mailformat))
+    let mailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(inputText.value.match(mailFormat))
         {
-        alert("Valid email address!");
+        alert("Valid email address! --- true");
         document.form.email.focus();
         return true;
         }
         else
         {
-        alert("You have entered an invalid email address!");
+        alert("You have entered an invalid email address! --- false");
         document.form.email.focus();
         return false;
   }
   }
+
+  checkIsDomain(inputText){
+    let domainFormat = /^((?:(?:(?:\w[\.\-\+]?)*)\w)+)((?:(?:(?:\w[\.\-\+]?){0,62})\w)+)\.(\w{2,6})$/;
+    if(inputText.value.match(domainFormat))
+        {
+        alert("Valid domain --- true");
+        document.form.domain.focus();
+        return true;
+        }
+        else
+        {
+        alert("You have entered an invalid domain --- false");
+        document.form.domain.focus();
+        return false;
   }
+  }
+
+}
 
