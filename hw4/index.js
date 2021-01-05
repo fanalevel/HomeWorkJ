@@ -182,6 +182,8 @@ class Validator {
   constructor(){
     this.checkIsEmail();
     this.checkIsDomain();
+    this.checkIsPhone();
+    this.checkIsDate();
   }
 
   checkIsEmail(inputText){
@@ -212,6 +214,38 @@ class Validator {
         {
         alert("You have entered an invalid domain --- false");
         document.form.domain.focus();
+        return false;
+  }
+  }
+
+   checkIsPhone(inputText){
+    let phoneFormat = /^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+    if(inputText.value.match(phoneFormat))
+        {
+        alert("Number --- true");
+        document.form.telephone.focus();
+        return true;
+        }
+        else
+        {
+        alert("Not Ukraine number  --- false");
+        document.form.telephone.focus();
+        return false;
+  }
+  }
+
+  checkIsDate(inputText){
+    let dateFormat = /^((?:(?:(?:\w[\.\-\+]?)*)\w)+)((?:(?:(?:\w[\.\-\+]?){0,62})\w)+)\.(\w{2,6})$/;
+    if(inputText.value.match(dateFormat))
+        {
+        alert("Date is --- true");
+        document.form.date.focus();
+        return true;
+        }
+        else
+        {
+        alert("Date is  --- false");
+        document.form.date.focus();
         return false;
   }
   }

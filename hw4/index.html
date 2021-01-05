@@ -9,11 +9,17 @@
   <h1>Home work 4</h1>
   <form name="form" action="#">
   <h2>Input an email and Submit</h2>     
-  <input type="text" name="email">
+  <input type="text" name="email" value="example@example.com">
   <input type="submit" name="submit" value="Submit" onclick="Validator.prototype.checkIsEmail(document.form.email)"/>
   <h2>Input an domain name</h2>     
-  <input type="text" name="domain">
+  <input type="text" name="domain" value="google.com">
   <input type="submit" name="submit" value="Submit" onclick="Validator.prototype.checkIsDomain(document.form.domain)"/>
+  <h2>Input an telephone:</h2>     
+  <input type="text" name="telephone" value="+380661679534">
+  <input type="submit" name="submit" value="Submit"  onclick="Validator.prototype.checkIsPhone(document.form.telephone)"/>
+  <h2>Input an date</h2>     
+  <input type="text" name="date" value="12.12.2021">
+  <input type="submit" name="submit" value="Submit"  onclick="Validator.prototype.checkIsDate(document.form.date)"/>
   </form> 
   <script src="index.js"></script>
 </body>
