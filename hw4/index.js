@@ -235,7 +235,7 @@ class Validator {
   }
 
   checkIsDate(inputText){
-    let dateFormat = /^((?:(?:(?:\w[\.\-\+]?)*)\w)+)((?:(?:(?:\w[\.\-\+]?){0,62})\w)+)\.(\w{2,6})$/;
+    let dateFormat = /^([0-9]{2})\.([0-9]{2})\.([0-9]{4})$/;
     if(inputText.value.match(dateFormat))
         {
         alert("Date is --- true");
