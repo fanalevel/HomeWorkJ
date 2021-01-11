@@ -16,9 +16,12 @@ let summer = adder();
 
 let massiv = () =>  {
   result = [];
-  return (a) => {
+  return (a) => { if (a == undefined) {
+    return result = [];
+  } else {
     result.push(a);
     return result;
+  }
   } 
 }
 
