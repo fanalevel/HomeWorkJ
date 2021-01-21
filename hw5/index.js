@@ -26,3 +26,21 @@ let massiv = () =>  {
 }
 
 let getUpdatedArr = massiv();
+
+// 3*
+// Содать функцию , которая при каждом вызове будет показывать разницу в секундах между временем когда ее вызывали последний раз и теперешним. Вызываем первый раз, то ретерним строку 'Enabled'. Запрещается использовать глобальные переменные как хранилище значений. 
+
+let difTime = () => {
+  let data = 0;
+    return () => {
+      if (data === 0) {
+        return 'Enabled'
+      } else {
+      data2 = new Date().getSeconds();
+      data = data2 - data;
+      return data;
+      }
+    }
+}
+
+let getsTime = difTime(); 
