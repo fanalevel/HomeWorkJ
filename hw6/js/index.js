@@ -13,3 +13,24 @@ removeUser(arr, 0);
 console.log(arr)
 
 
+// 2
+// Создать функцию которая вернет все ключи обьекта переданного параметром
+
+
+function getAllKeys (object){
+  return Object.keys(object);
+  }
+
+
+
+const obj = {
+  name: 'Vasya', 
+  age: 1,
+  surname: 'Vasiliev'
+}
+
+getAllKeys(obj)
+
+console.log(getAllKeys(obj))
+
+
